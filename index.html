@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="contenedor-btn-saludar">
-         <button onclick="alert('Hola!')" id="btn-saludar">Saludar</button>
+         <button onclick="event.stopPropagation(); alert('Hola!')" id="btn-saludar">Saludar</button>
     </div>
 
     <script src="eventos.js"></script>
